@@ -1,0 +1,12 @@
+Nama	: David Precius Panggabean
+Nim	: 20210801245
+
+Essay :
+1.Routing static adalah salah satu metode konfigurasi router konfigurasi yang dilakukan secara manual oleh administrator jaringan.
+
+2.Routing dynamic adalah salah satu metode konfigurasi yang bisa secara otomatis membuat tabel routing sesuai dengan lalu lintas jaringan dan perangkat routing yang terhubung.
+
+3.Firewall adalah sistem atau perangkat lunak keaman jaringan yang berguna untuk melindungi atau mengamankan komputer dari ancaman jaringan computer lain dengan menyaring akses berbahaya atau akses asing yang tidak di inginkan.
+
+4.NAT adalah teknologi yang bekerja dengan menerjemahkan alamat IP pribadi ke alamat IP publik sebelum informasi dikirim ke internet.
+
