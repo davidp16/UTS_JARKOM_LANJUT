@@ -1,0 +1,24 @@
+ Konfigurasi interface LAN (internal)
+interface GigabitEthernet0/0
+ ip address 192.168.3.1 255.255.255.0
+ ip nat inside
+ no shutdown
+
+Konfigurasi interface WAN (publik)
+interface GigabitEthernet0/1
+ ip address 200.100.2.1 255.255.255.0
+ ip nat outside
+ no shutdown
+
+Konfigurasi DHCP untuk LAN
+ip dhcp pool LAB_KJ
+ network 192.168.3.0 255.255.255.0
+ default-router 192.168.3.1
+ dns-server 8.8.8.8
+
+Konfigurasi NAT untuk akses internet
+ip nat inside source list 1 interface GigabitEthernet0/1 overload
+access-list 1 permit 192.168.3.0 0.0.0.255
+
+Default route ke internet
+ip route 0.0.0.0 0.0.0.0 200.100.2.254
